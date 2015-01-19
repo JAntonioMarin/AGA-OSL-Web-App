@@ -9,4 +9,4 @@ handlers:
 - url: /(.+\.(html|php))$
   script: \1
 - url: /.*
-  script: index.html
+  script: index.php
