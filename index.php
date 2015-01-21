@@ -8,8 +8,7 @@ echo'
 		
 		<div class="row section topspace">
 			<div class="col-md-12">';
-			echo '<p>Aqui va el codigo QR para codigo 1:</p><img src="qr.php?id=1" />';
-
+			echo '<p>Codigo QR con Api de Google:</p><img src="https://chart.googleapis.com/chart?chs=150x150&amp;cht=qr&amp;chl=1&amp;choe=UTF-8" alt="QR code">';
      
 			$url = "https://aga-osl.herokuapp.com/stock/1.json";
 			$json = file_get_contents($url);
