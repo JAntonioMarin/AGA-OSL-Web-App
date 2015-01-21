@@ -8,7 +8,7 @@ echo'
 		
 		<div class="row section topspace">
 			<div class="col-md-12">';
-			echo '<p>Aqui va el codigo QR:</p><img src="qr.php?id=1" />';
+			echo '<p>Aqui va el codigo QR para codigo 1:</p><img src="qr.php?id=1" />';
 
      
 			$url = "https://aga-osl.herokuapp.com/stock/1.json";
