@@ -12,7 +12,6 @@ echo'
 	<title>AGA-OSL</title>
 
 	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
-	
 	<!-- Bootstrap -->
 	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
 	<!-- Iconos -->
