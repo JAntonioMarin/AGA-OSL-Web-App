@@ -70,7 +70,130 @@
 				<p class="lead text-center text-muted">Let me tell you something my friend. hope is a dangerous thing. hope can drive a man insane. you <a href="about.html">measure</a> yourself by the people who measure themselves by you. it only took me <a href="sidebar-right.html">six days</a>. </p>
 			</div>
 		</div> <!-- / section -->
-		
+
+		<!--PABLO BEGINS-->
+		<div id="containerFormulario">
+
+            <!--
+                Errores 
+            -->
+            <div id="error"></div>
+
+            <!--
+                Definimos el método de envío (POST hace que nuestros datos no se puedan ver desde
+                el navegador, que es lo más seguro), y la URL a la que enviarlo (post.php)
+            -->
+            <form id="formulario" name="formulario" method="POST" action="post.php">
+                <!--Referencia-->
+                <p>
+                    <label for="referencia">Referencia: </label><span class="requerido">*</span>
+                    <input type="text" maxlength="10" name="referencia" id="referencia" onkeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;" />
+                </p>     
+                <!--Revisado-->
+                <p>
+                    <label for="revisado">Revisado: </label><span class="requerido">*</span>                    
+				    <select name="revisado">    
+				       <option value="Si" selected="selected">Sí</option>
+				       <option value="No">No</option>			       
+				    </select>
+				</p> 
+                <!--Tipo-->
+                <p>
+                    <label for="tipo">Tipo: </label><span class="requerido">*</span>                    
+				    <select name="tipo">    
+				       <option value="Sobremesa" selected="selected">Sobremesa</option>
+				       <option value="Portatil">Portatil</option>	       
+				    </select>
+				</p> 
+				<!--CPU-->
+                <p>
+                    <label for="cpu">CPU: </label><span class="requerido">*</span>
+                    <input type="text" name="cpu" id="cpu" size="40" required placeholder="CPU">
+                </p>
+                 <!--Mhz-->
+                <p>
+                    <label for="mhz">Mhz: </label><span class="requerido">*</span>
+                    <input type="text" maxlength="10" name="mhz" id="mhz" onkeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;" />
+                </p>
+                 <!--Ram-->
+                <p>
+                    <label for="ram">RAM: </label><span class="requerido">*</span>
+                    <input type="text" maxlength="10" name="ram" id="ram" onkeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;" />
+                </p>
+                 <!--Disco Duro-->
+                <p>
+                    <label for="discoduro">Disco Duro (GB): </label><span class="requerido">*</span>
+                    <input type="text" maxlength="10" name="discoduro" id="discoduro" onkeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;" />
+                </p>
+                <!--CD/DVD-->
+                <p>
+                    <label for="cddvd">CD/DVD: </label><span class="requerido">*</span>
+                    <input type="text" name="cddvd" id="cddvd" size="40" required placeholder="cddvd">
+                </p>	
+                <!--Floppy-->
+                <p>
+                    <label for="floppy">Floppy: </label><span class="requerido">*</span>                    
+				    <select name="floppy">    
+				       <option value="floppy" selected="selected">No</option>
+				       <option value="Portatil">Sí</option>	       
+				    </select>
+				</p> 
+				<!--Ethernet-->
+                <p>
+                    <label for="ethernet">Ethernet: </label><span class="requerido">*</span>                    
+				    <select name="ethernet">    
+				       <option value="Ethernet" selected="selected">Sí</option>
+				       <option value="Portatil">No</option>	       
+				    </select>
+				</p> 
+				<!--Fuente Alimentacion-->
+                <p>
+                    <label for="fuenteAlimentacion">Fuente Alimentacion: </label><span class="requerido">*</span>
+                    <input type="text" name="fuenteAlimentacion" id="fuenteAlimentacion" size="40" required placeholder="Fuente Alimentacion">
+                </p>
+                <!--Notas-->	
+                <p>
+                    <label for="notas">Notas</label><span class="requerido">*</span>
+                    <textarea id="notas" name="notas" placeholder=" Escriba aquí" rows="8" required></textarea>
+                </p>
+                <!--Campaña numero-->
+                <p>
+                    <label for="campañaNumero">Campaña número: </label><span class="requerido">*</span>
+                    <input type="text" name="campañaNumero" id="campañaNumero" size="40" required placeholder="Campaña Numero">
+                </p>
+                <!--Puntuacion CPU-->
+                <p>
+                    <label for="puntuacionCPU">Puntuacion CPU: </label><span class="requerido">*</span>
+                    <input type="text" maxlength="10" name="puntuacionCPU" id="puntuacionCPU" onkeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;" />
+                </p>
+                <!--Puntuacion Ram-->
+                <p>
+                    <label for="puntuacionRam">Puntuacion Ram: </label><span class="requerido">*</span>
+                    <input type="text" maxlength="10" name="puntuacionRam" id="puntuacionRam" onkeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;" />
+                </p>
+                <!--Puntuacion DD-->
+                <p>
+                    <label for="puntuacionDD">Puntuacion DD: </label><span class="requerido">*</span>
+                    <input type="text" maxlength="10" name="puntuacionDD" id="puntuacionDD" onkeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;" />
+                </p>
+                <!--Puntuacion-->
+                <p>
+                    <label for="puntuacion">Puntuación: </label><span class="requerido">*</span>
+                    <input type="text" maxlength="10" name="puntuacion" id="puntuacion" onkeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;" />
+                </p>
+
+
+                <p class="submit">
+                    <input type="submit" id="submit" value="Enviar">
+                </p>
+            </form>
+            <!--
+                Aquí pondremos el mensaje cuando enviemos el mensaje
+            -->
+            <div id="correcto"></div>
+        </div>
+        <script type="text/javascript" src="js/script.js"></script>
+		<!--PABLO ENDS-->
 		<div class="row section featured topspace">
 			<h2 class="section-title"><span>Services</span></h2>
 			<div class="row">
