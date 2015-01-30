@@ -15,25 +15,25 @@ echo'
 			$json_data = json_decode($json, true);
 			echo "<p>Prueba de acceso a https://aga-osl.herokuapp.com/stock/1.json</p>";
 				//<p class="lead text-center text-muted">Let me tell you something my friend. hope is a dangerous thing. hope can drive a man insane. you <a href="about.html">measure</a> yourself by the people who measure themselves by you. it only took me <a href="sidebar-right.html">six days</a>. </p>
-				echo '<p>Referencia:';echo $json_data["Referencia"];echo'</p>';
+				echo '<p>Referencia:';echo $json_data["referencia"];echo'</p>';
 				echo '<p>revisado:';echo $json_data["revisado"];echo'</p>';
-				echo '<p>Localización:';echo $json_data["Localización"];echo'</p>';
-				echo '<p>Tipo:';echo $json_data["Tipo"];echo'</p>';
-				echo '<p>CPU:';echo $json_data["CPU"];echo'</p>';
-				echo '<p>MHz:';echo $json_data["MHz"];echo'</p>';
-				echo '<p>RAM:';echo $json_data["RAM"];echo'</p>';
-				echo '<p>Disco Duro (GB):';echo $json_data["Disco Duro (GB)"];echo'</p>';
-				echo '<p>CD/DVD:';echo $json_data["CD/DVD"];echo'</p>';
-				echo '<p>Floppy:';echo $json_data["Floppy"];echo'</p>';
-				echo '<p>Ethernet:';echo $json_data["Ethernet"];echo'</p>';
-				echo '<p>Fuente Alimentación:';echo $json_data["Fuente Alimentación"];echo'</p>';
-				echo '<p>Notas:';echo $json_data["Notas"];echo'</p>';
-				echo '<p>Campaña número:';echo $json_data["Campaña número"];echo'</p>';
-				echo '<p>Puntuación CPU:';echo $json_data["Puntuación CPU"];echo'</p>';
-				echo '<p>Puntuación RAM:';echo $json_data["Puntuación RAM"];echo'</p>';
-				echo '<p>Puntuación DD:';echo $json_data["Puntuación DD"];echo'</p>';
-				echo '<p>Puntuación:';echo $json_data["RefePuntuaciónrencia"];echo'</p>';
-				echo '<p>Fecha de modificación:';echo $json_data["Fecha de modificación"];echo'</p>';
+				echo '<p>Localización:';echo $json_data["localizacion"];echo'</p>';
+				echo '<p>Tipo:';echo $json_data["tipo"];echo'</p>';
+				echo '<p>CPU:';echo $json_data["cpu"];echo'</p>';
+				echo '<p>MHz:';echo $json_data["mhz"];echo'</p>';
+				echo '<p>RAM:';echo $json_data["ram"];echo'</p>';
+				echo '<p>Disco Duro (GB):';echo $json_data["disco_duro"];echo'</p>';
+				echo '<p>CD/DVD:';echo $json_data["cd_dvd"];echo'</p>';
+				echo '<p>Floppy:';echo $json_data["floppy"];echo'</p>';
+				echo '<p>Ethernet:';echo $json_data["ethernet"];echo'</p>';
+				echo '<p>Fuente Alimentación:';echo $json_data["fuente_alimentacion"];echo'</p>';
+				echo '<p>Notas:';echo $json_data["notas"];echo'</p>';
+				echo '<p>Campaña número:';echo $json_data["campana_numero"];echo'</p>';
+				echo '<p>Puntuación CPU:';echo $json_data["puntuacion_cpu"];echo'</p>';
+				echo '<p>Puntuación RAM:';echo $json_data["puntuacion_ram"];echo'</p>';
+				echo '<p>Puntuación DD:';echo $json_data["puntuacion_dd"];echo'</p>';
+				echo '<p>Puntuación:';echo $json_data["puntuacion"];echo'</p>';
+				echo '<p>Fecha de modificación:';echo $json_data["ultima_modificacion"];echo'</p>';
 				echo '
 			</div>
 		</div> <!-- / section -->
@@ -162,6 +162,56 @@ echo'
 				</div>
 			</div></div>
 		</div> <!-- /section -->
+
+		';
+		echo '<h1>Prueba de bucle json</h1>';
+		$url = "https://aga-osl.herokuapp.com/stock.json";
+		$json = file_get_contents($url);
+		$array = json_decode($json);
+		foreach($array as $obj){
+        $referencia = $obj->referencia;
+        $revisado = $obj->revisado;
+        $localizacion = $obj->localizacion;
+        $tipo = $obj->tipo;
+        $cpu = $obj->cpu;
+        $mhz = $obj->mhz;
+        $ram = $obj->ram;
+        $disco_duro = $obj->disco_duro;
+        $cd_dvd = $obj->cd_dvd;
+        $floppy = $obj->floppy;
+        $ethernet = $obj->ethernet;
+        $fuente_alimentacion = $obj->fuente_alimentacion;
+        $notas = $obj->notas;
+        $campana_numero = $obj->campana_numero;
+        $puntuacion_cpu = $obj->puntuacion_cpu;
+        $puntuacion_ram = $obj->puntuacion_ram;
+        $puntuacion_dd = $obj->puntuacion_dd;
+        $puntuacion = $obj->puntuacion;
+        $ultima_modificacion = $obj->ultima_modificacion;
+        echo '<p>Referencia:';echo $referencia;echo'</p>';
+				echo '<p>revisado:';echo $revisado;echo'</p>';
+				echo '<p>Localización:';echo $localizacion;echo'</p>';
+				echo '<p>Tipo:';echo $tipo;echo'</p>';
+				echo '<p>CPU:';echo $cpu;echo'</p>';
+				echo '<p>MHz:';echo $mhz;echo'</p>';
+				echo '<p>RAM:';echo $ram;echo'</p>';
+				echo '<p>Disco Duro (GB):';echo $disco_duro;echo'</p>';
+				echo '<p>CD/DVD:';echo $cd_dvd;echo'</p>';
+				echo '<p>Floppy:';echo $floppy;echo'</p>';
+				echo '<p>Ethernet:';echo $ethernet;echo'</p>';
+				echo '<p>Fuente Alimentación:';echo $fuente_alimentacion;echo'</p>';
+				echo '<p>Notas:';echo $notas;echo'</p>';
+				echo '<p>Campaña número:';echo $campana_numero;echo'</p>';
+				echo '<p>Puntuación CPU:';echo $puntuacion_cpu;echo'</p>';
+				echo '<p>Puntuación RAM:';echo $puntuacion_ram;echo'</p>';
+				echo '<p>Puntuación DD:';echo $puntuacion_dd;echo'</p>';
+				echo '<p>Puntuación:';echo $puntuacion;echo'</p>';
+				echo '<p>Fecha de modificación:';echo $ultima_modificacion;echo'</p>';
+        echo "
+";
+}
+
+		echo'
 
 		<div class="row section clients topspace">
 			<h2 class="section-title"><span>Clients</span></h2>
