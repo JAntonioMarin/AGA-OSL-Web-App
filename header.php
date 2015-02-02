@@ -24,4 +24,6 @@ echo'
 	<!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
 </head>
 ';
+require_once("listado.php");
+require_once("computadora.php");
 ?>
