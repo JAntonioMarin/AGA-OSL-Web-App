@@ -20,5 +20,11 @@ class pruebaListado extends UnitTestCase {
 	$this->assertEqual('OK', $prueba2->dibujaListado());}
 }
 
+class pruebaQR extends UnitTestCase {
+	function testCodigoQR(){
+	$prueba3 = new codigoQR("Prueba codigo QR");
+	$this->assertEqual('OK', $prueba3->dibujaQR());}
+}
+
 
 ?>
