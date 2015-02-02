@@ -69,6 +69,7 @@ class Computadora{
 		
 		echo '</tr>';
 		echo '</table><div>';	
+		return 'OK';
 	}
 }
 

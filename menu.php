@@ -8,7 +8,7 @@ echo'
 			<img class="img-circle" src="assets/images/guy.jpg" alt="">
 			<span class="title">AGA-OSL</span>
 			<span class="tagline">Desarrollo de Web para AGA-OSL<br>
-				<a href="">avalanc@correo.ugr.es</a></span>
+				<a href="">avalanc@correo.ugr.es & ppruiz@correo.ugr.es</a></span>
 		</h1>
 	</div>
 
@@ -23,15 +23,15 @@ echo'
 				
 				<ul class="nav navbar-nav">
 					<li class="active"><a href="index.php">Principal</a></li>
-					<li><a href="about.html">Sobre nosotros</a></li>
+					<li><a href="#">Sobre nosotros</a></li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Acciones<b class="caret"></b></a>
 						<ul class="dropdown-menu">
-							<li><a href="sidebar-left.html">Buscar</a></li>
-							<li><a href="sidebar-right.html">Insertar</a></li>
+							<li><a href="#">Buscar</a></li>
+							<li><a href="#">Insertar</a></li>
 						</ul>
 					</li>
-					<li><a href="blog.html">Blog</a></li>
+					<li><a href="#">Blog</a></li>
 				</ul>
 			
 			</div><!--/.nav-collapse -->			

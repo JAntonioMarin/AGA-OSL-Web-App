@@ -11,8 +11,6 @@ echo'
 $url = "https://aga-osl.herokuapp.com/stock/1.json";
 			$objeto = new Computadora($url);
 			$objeto->dibujaTabla();
-			
-				include("phpUnit.php");
 				echo'
 		<div class="row section recentworks topspace">
 			<h2 class="section-title"><span>Prueba Bucle JSON</span></h2>
@@ -21,7 +19,7 @@ $url = "https://aga-osl.herokuapp.com/stock/1.json";
 		<div class="row section topspace">
 			<div class="panel panel-cta"><div class="panel-body">
 				<div class="col-lg-8">
-					<p>Para acceder a un elemento en concreto haz click sobre el <b>codigo QR</b>. Aqui tienes un listado de los elementos que se encuentran en el google drive a traves del REST</p>
+					<p>Aqui tienes un listado de los elementos que se encuentran en el google drive a traves del REST con el codigo QR generado dinamicamente.</p>
 				</div>
 				<div class="col-lg-4 text-right">
 					<a href="https://github.com/JAntonioMarin/AGA-OSL-Web-App" class="btn btn-primary btn-lg">Mas información</a>
