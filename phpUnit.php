@@ -2,6 +2,7 @@
 require_once('simpletest/autorun.php');
 include ('computadora.php');
 include ('listado.php');
+include ('codigoQR.php');
 
 class TestOfLogging extends UnitTestCase {
     function testFirstLogMessagesCreatesFileIfNonexistent() {
